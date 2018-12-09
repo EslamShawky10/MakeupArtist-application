@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <item android:title="الملف الشخصى" >
+        <menu>
+            <item
+                android:id="@+id/nav_profile"
+                android:icon="@drawable/ic_menu_gallery"
+                android:title="عرض ملفك الشخصى" />
+
+        </menu>
+    </item>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_services"
+            android:icon="@drawable/ic_menu_send"
+            android:title="خدماتى" />
+        <item
+            android:id="@+id/nav_notification"
+            android:icon="@drawable/notification"
+            android:title="الإشعارات" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="إعدادات الحساب" />
+        <item
+            android:id="@+id/nav_order"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="الطلبات" />
+
+        <item android:id="@+id/nav_singout"
+            android:icon="@drawable/ic_menu_share"
+            android:title="تسجيل الخروج"/>
+    </group>
+
+</menu>

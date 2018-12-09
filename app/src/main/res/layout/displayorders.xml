@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textNameOrder"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="48dp"
+        android:text=""
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/textDate"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textNameOrder"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-9dp"
+        android:layout_marginTop="103dp"
+        android:text=""
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/textTotalPrice"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textNameOrder"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-3dp"
+        android:layout_marginTop="155dp"
+        android:text=""
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/button_lastOrders"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textTotalPrice"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="المزيد"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textNameOrder"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="31dp"
+        android:text="الإسم"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView4"
+        android:layout_centerVertical="true"
+        android:text="التاريخ"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_alignTop="@+id/textTotalPrice"
+        android:layout_marginStart="-3dp"
+        android:layout_marginTop="0dp"
+        android:text="الإجمالى"
+        android:textSize="18sp" />
+
+</RelativeLayout>
