@@ -1,41 +1,34 @@
 package com.eslamshawky.hp.makeupartist.InterfaceServiceProvider;
 
 import android.content.Intent;
+import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
 import android.widget.TextView;
-
 import com.eslamshawky.hp.makeupartist.R;
+import static com.eslamshawky.hp.makeupartist.InterfaceServiceProvider.Orders.ADDRESS;
+import static com.eslamshawky.hp.makeupartist.InterfaceServiceProvider.Orders.NAME;
+import static com.eslamshawky.hp.makeupartist.InterfaceServiceProvider.Orders.SERVICES;
+import static com.eslamshawky.hp.makeupartist.InterfaceServiceProvider.Orders.TOTALPRICE;
 
-public class DetailsOrders extends Fragment {
- TextView name,phoneNumber,address,totalPrice,services;
- TextView back;
-
-    public DetailsOrders() {
-    }
-
+public class DetailsOrders extends AppCompatActivity {
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        View view= inflater.inflate(R.layout.fragment_details_orders, container, false);
-        name = view.findViewById(R.id.textView_name_details);
-        phoneNumber = view.findViewById(R.id.textView_phone_details);
-        address = view.findViewById(R.id.textView_address_details);
-        totalPrice = view.findViewById(R.id.textView_price_details);
-        services = view.findViewById(R.id.textView_service_details);
-        back = view.findViewById(R.id.textView_back);
-        back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getActivity(),Orders.class);
-                startActivity(intent);
-            }
-        });
-        return view;
-    }
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_details_orders);
+        Intent intent = getIntent();
+        String name = intent.getStringExtra(NAME);
+        String address = intent.getStringExtra(ADDRESS);
+        String totalprice = intent.getStringExtra(TOTALPRICE);
+        String services = intent.getStringExtra(SERVICES);
+        TextView textViewName = findViewById(R.id.textView_name_details);
+        TextView textViewAddress = findViewById(R.id.textView_address_details);
+        TextView textViewTotalePrice = findViewById(R.id.textView_totalprice_details);
+        TextView textViewServices = findViewById(R.id.textView_listofordersdetails);
+        textViewName.setText(name);
+        textViewAddress.setText(address);
+        textViewTotalePrice.setText(totalprice);
+        textViewServices.setText(services);
 
+    }
 }

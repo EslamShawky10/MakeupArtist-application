@@ -3,24 +3,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorAccent"
     tools:context=".InterfaceServiceProvider.Orders">
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-<TextView
-    android:id="@+id/MainOrders"
-    android:padding="5dp"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:textSize="35dp"
-    android:layout_centerHorizontal="true"
-    android:gravity="center"
-    android:text="طلباتى"/>
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/RecyclerListOrder"
-        android:layout_below="@+id/MainOrders"
+
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-    </android.support.v7.widget.RecyclerView>
-</RelativeLayout>
+        android:layout_height="match_parent"
+        android:padding="30dp">
+
+        <TextView
+            android:id="@+id/MainOrders"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shapedetailsorders_data"
+            android:gravity="center"
+            android:text="طلباتى"
+            android:textSize="35dp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/RecyclerListOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/MainOrders"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"></android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
 </ScrollView>

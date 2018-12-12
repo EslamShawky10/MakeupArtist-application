@@ -3,36 +3,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".InterfaceServiceProvider.AddNewServices"
-    android:orientation="vertical">
+    android:background="@color/colorAccent"
+    android:orientation="vertical"
+    tools:context=".InterfaceServiceProvider.AddNewServices">
 
     <EditText
         android:id="@+id/editText_nameservice"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/shapesordermain"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="إسم الخدمة" />
+        android:hint="إسم الخدمة"
+        android:inputType="textPersonName" />
 
     <Spinner
         android:id="@+id/spinner"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:background="@drawable/shapesordermain" />
 
     <EditText
         android:id="@+id/editText_priceservice"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/shapesordermain"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="سعر الخدمة" />
+        android:hint="سعر الخدمة"
+        android:inputType="textPersonName" />
 
     <Button
-        android:layout_gravity="center"
         android:id="@+id/button_ok"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="25sp"
-        android:text="تم" />
+        android:layout_gravity="center"
+        android:background="@drawable/shapemainbutton"
+        android:text="تم"
+        android:textSize="25sp" />
 
 </LinearLayout>

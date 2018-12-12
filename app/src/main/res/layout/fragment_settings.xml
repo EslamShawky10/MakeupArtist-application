@@ -13,10 +13,11 @@
         android:layout_alignParentEnd="true"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="15dp"
+        android:background="@color/common_google_signin_btn_text_dark_default"
         android:gravity="center"
         android:text="عن التطبيق:"
         android:textColor="@color/colorPrimaryDark"
-        android:textSize="24sp"/>
+        android:textSize="24sp" />
 
     <View
         android:layout_width="132dp"
@@ -49,21 +50,21 @@
 
     <TextView
         android:id="@+id/button_share"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
         android:layout_above="@+id/view"
         android:layout_centerHorizontal="true"
+        android:background="@drawable/shapesettingsproviders"
         android:gravity="center"
         android:text="مشاركة التطبيق"
         android:textSize="18sp" />
 
     <View
-        android:layout_width="match_parent"
         android:id="@+id/view"
+        android:layout_width="match_parent"
         android:layout_height="4dp"
         android:layout_above="@+id/textView3"
-        android:background="@color/colorPrimaryDark"
-        />
+        android:background="@color/colorPrimaryDark" />
 
     <TextView
         android:id="@+id/textView3"
@@ -108,11 +109,11 @@
         android:text="01091729828"
         android:textColor="@color/colorPrimary"
         android:textSize="15sp" />
+
     <View
         android:layout_width="match_parent"
         android:layout_height="2dp"
-        android:background="@color/colorPrimaryDark"
-        />
+        android:background="@color/colorPrimaryDark" />
 
     <TextView
         android:id="@+id/button_back"

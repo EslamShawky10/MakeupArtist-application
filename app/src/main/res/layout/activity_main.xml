@@ -4,48 +4,66 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/mohamed"
     tools:context=".InterfaceServiceProvider.MainActivity"
-    android:background="@drawable/shapes">
+   >
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="110dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="25dp"
+        android:layout_toEndOf="@+id/imageView"
+        android:text="LIVE ARTIST"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp"
+        android:textStyle="normal" />
 
-
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="110dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="25dp"
+        app:srcCompat="@drawable/kk" />
     <Button
         android:id="@+id/button_service"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="93dp"
+        android:layout_marginTop="150dp"
         android:layout_marginEnd="49dp"
-        android:layout_marginRight="-271dp"
+        android:layout_centerHorizontal="true"
         android:text="@string/Service"
-        android:textSize="25dp"
-        android:background="@drawable/shapemainbutton"/>
+        android:background="@drawable/shapemainbutton"
+        android:textSize="18sp"
+        />
 
     <Button
         android:id="@+id/button_customer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="49dp"
-        android:layout_marginTop="93dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
         android:text="طالب خدمة"
-        android:textSize="25dp"
+        android:textSize="18sp"
         android:background="@drawable/shapemainbutton"
         />
-<LinearLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    android:layout_below="@+id/button_customer">
+
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="match_parent"
-        android:layout_height="356dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginBottom="0dp"
-        app:srcCompat="@mipmap/makeupmain" />
-</LinearLayout>
+        android:layout_height="500dp"
+        android:layout_marginTop="210dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/makemain" />
+
 </RelativeLayout>

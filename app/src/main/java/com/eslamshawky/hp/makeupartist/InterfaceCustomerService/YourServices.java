@@ -1,8 +1,11 @@
 package com.eslamshawky.hp.makeupartist.InterfaceCustomerService;
 
+import android.content.DialogInterface;
+import android.opengl.EGLExt;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v7.app.AlertDialog;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -34,6 +37,11 @@ public class YourServices extends AppCompatActivity
             }
         });
 
+        SearchingService searchingService = new SearchingService();
+        android.support.v4.app.FragmentTransaction  transaction = getSupportFragmentManager()
+                .beginTransaction();
+        transaction.replace(R.id.frame_collection_customerService,searchingService);
+        transaction.commit();
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -82,18 +90,58 @@ public class YourServices extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        if (id == R.id.nav_searching) {
+            SearchingService searchingService = new SearchingService();
+            android.support.v4.app.FragmentTransaction  transaction = getSupportFragmentManager()
+                    .beginTransaction();
+            transaction.replace(R.id.frame_collection_customerService,searchingService);
+            transaction.commit();
+        } else if (id == R.id.nav_orders) {
+            MyOrders myOrders = new MyOrders();
+            android.support.v4.app.FragmentTransaction transaction = getSupportFragmentManager()
+                    .beginTransaction();
+            transaction.replace(R.id.frame_collection_customerService,myOrders);
+            transaction.commit();
+        } else if (id == R.id.nav_notification) {
+            NotificationsByCustomer notifications = new NotificationsByCustomer();
+            android.support.v4.app.FragmentTransaction fragmentTransaction
+                    = getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.frame_collection_customerService,notifications);
+            fragmentTransaction.commit();
+        } else if (id == R.id.nav_settings) {
+            SettingsCustomer settings = new SettingsCustomer();
+            android.support.v4.app.FragmentTransaction fragmentTransaction
+                    = getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.frame_collection_customerService,settings);
+            fragmentTransaction.commit();
+        } else if (id == R.id.nav_discount) {
+            DiscountCode discountCode = new DiscountCode();
+            android.support.v4.app.FragmentTransaction fragmentTransaction
+                    = getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.frame_collection_customerService,discountCode);
+            fragmentTransaction.commit();
+        } else if (id == R.id.nav_singout) {
+            LogOutCustomer logOut = new LogOutCustomer();
+            android.support.v4.app.FragmentTransaction fragmentTransaction
+                    = getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.frame_collection_customerService,logOut);
+            fragmentTransaction.commit();
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.setTitle("إغلاق التطبيق");
+            builder.setMessage("هل انت متأكد من الخروج من التطبيق");
+            builder.setPositiveButton("نعم", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    finishAffinity();
+                }
+            });
+            builder.setNegativeButton("لا", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
 
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
+                }
+            });
+            builder.show();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

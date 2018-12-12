@@ -9,9 +9,11 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.eslamshawky.hp.makeupartist.R;
-public class MyOrders extends Fragment {
 
-    public MyOrders() {
+public class SearchingService extends Fragment {
+
+
+    public SearchingService() {
         // Required empty public constructor
     }
 
@@ -20,7 +22,6 @@ public class MyOrders extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_my_services, container, false);
+        return inflater.inflate(R.layout.fragment_serarching, container, false);
     }
-
 }

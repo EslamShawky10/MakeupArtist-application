@@ -1,12 +1,14 @@
 package com.eslamshawky.hp.makeupartist.ModelsServiceProvider;
 
 public class OrdersModel {
-    private String name,date,totalPrice;
-
-    public OrdersModel(String name, String date, String totalPrice) {
+    private String name,date,totalPrice,address;
+    String listOfServices;
+    public OrdersModel(String name, String date, String totalPrice,String address ,String listOfServices) {
         this.name = name;
         this.date = date;
         this.totalPrice = totalPrice;
+        this.address = address;
+        this.listOfServices = listOfServices;
     }
 
     public OrdersModel() {
@@ -34,5 +36,21 @@ public class OrdersModel {
 
     public void setTotalPrice(String totalPrice) {
         this.totalPrice = totalPrice;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getListOfServices() {
+        return listOfServices;
+    }
+
+    public void setListOfServices(String listOfServices) {
+        this.listOfServices = listOfServices;
     }
 }

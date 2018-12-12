@@ -11,7 +11,8 @@
         android:gravity="center"
         android:textColor="@color/colorAccent"
         android:textColorLink="@color/colorAccent"
-        android:text="eslam"/>
+        android:background="@drawable/shapesordermain"
+        />
 
     <TextView
         android:id="@+id/text_type"
@@ -19,7 +20,8 @@
         android:layout_height="50dp"
         android:gravity="center"
         android:textColor="@color/colorAccent"
-        android:text="cut"/>
+        android:background="@drawable/shapesordermain"
+       />
 
     <TextView
         android:id="@+id/text_price"
@@ -27,6 +29,6 @@
         android:layout_height="50dp"
         android:gravity="center"
         android:textColor="@color/colorAccent"
-        android:text="25"
+        android:background="@drawable/shapesordermain"
         />
 </LinearLayout>

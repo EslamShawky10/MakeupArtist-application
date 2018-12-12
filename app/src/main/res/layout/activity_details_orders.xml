@@ -1,8 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewDetailsmain"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/shapedetailsorders_texts"
+        android:text="تفاصيل الطلب"
+        android:textSize="28sp" />
 
     <TextView
         android:id="@+id/name"
@@ -11,7 +22,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_gravity="right|center"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="110dp"
         android:layout_marginEnd="10dp"
         android:gravity="center"
         android:text="إسم الخدمة:"
@@ -20,12 +31,12 @@
         android:textSize="18sp" />
 
     <TextView
-        android:id="@+id/textNameOrder"
+        android:id="@+id/textView_name_details"
         android:layout_width="200dp"
         android:layout_height="60dp"
         android:layout_alignParentTop="true"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="110dp"
         android:layout_marginEnd="140dp"
         android:gravity="right|center"
         android:text="الاسم"
@@ -38,26 +49,26 @@
         android:layout_width="120dp"
         android:layout_height="60dp"
         android:layout_alignStart="@+id/textView16"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="190dp"
         android:layout_marginEnd="10dp"
         android:gravity="right|center"
-        android:text="التاريخ:"
+        android:text="العنوان:"
         android:textColor="@color/colorPrimaryDark"
         android:background="@drawable/shapedetailsorders_texts"
         android:textSize="18sp" />
 
     <TextView
-        android:id="@+id/textDate"
+        android:id="@+id/textView_address_details"
         android:layout_width="200dp"
         android:layout_height="60dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="190dp"
         android:layout_marginEnd="140dp"
         android:gravity="right|center"
         android:background="@drawable/shapedetailsorders_data"
-        android:text="التاريخ"
+        android:text="العنوان"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="18sp" />
 
@@ -66,7 +77,7 @@
         android:layout_width="120dp"
         android:layout_height="60dp"
         android:layout_alignStart="@+id/name"
-        android:layout_marginTop="230dp"
+        android:layout_marginTop="270dp"
         android:layout_marginEnd="10dp"
         android:gravity="right|center"
         android:text="إجمالى السعر:"
@@ -75,13 +86,13 @@
         android:textSize="18sp" />
 
     <TextView
-        android:id="@+id/textTotalPrice"
+        android:id="@+id/textView_totalprice_details"
         android:layout_width="200dp"
         android:layout_height="60dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="230dp"
+        android:layout_marginTop="270dp"
         android:layout_marginEnd="140dp"
         android:gravity="right|center"
         android:background="@drawable/shapedetailsorders_data"
@@ -89,15 +100,14 @@
         android:textColor="@color/colorPrimaryDark"
         android:textSize="18sp" />
 
-    <Button
-        android:id="@+id/button_lastOrders"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="310dp"
-        android:gravity="center"
-        android:text="المزيد"
-        android:textSize="20dp"
+    <TextView
+        android:id="@+id/textView_listofordersdetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:gravity="center_horizontal"
+        android:text="الخدمات"
+        android:textColor="@color/colorPrimaryDark"
         android:background="@drawable/shapedetailsorders_data"
-        />
+        android:textSize="20sp" />
 </RelativeLayout>

@@ -2,6 +2,7 @@ package com.eslamshawky.hp.makeupartist.InterfaceServiceProvider;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.support.v7.app.AppCompatActivity;
@@ -28,22 +29,30 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class LogInActivity extends AppCompatActivity {
-    EditText username, password;
-    Button LogIn;
-    TextView signUp;
-    CheckBox checkBox;
-    String Url_log = "http://live-artists.com/admin/api/provider/login/2";
-    String UserName;
-    String PassWord;
-    ProgressBar progressBar;
+    public SharedPreferences preferences,sh;
+    private String prefName = "report";
+    SharedPreferences.Editor editor;
+    private String sharedUserName,sharedPassWord;
+    private EditText username, password;
+    private Button LogIn;
+    private TextView signUp;
+    private CheckBox checkBox;
+    private ProgressBar progressBar;
+    private   String Url_log = "http://live-artists.com/admin/api/provider/login/2";
+    private String UserName,PassWord;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_log_in);
+        sh= getSharedPreferences(prefName,MODE_PRIVATE);
+        sharedUserName = sh.getString("username","UserName");
+        sharedPassWord =  sh.getString("password","PassWord");
         username = (EditText) findViewById(R.id.edit_username);
         password = (EditText) findViewById(R.id.edit_password);
+        progressBar = (ProgressBar)findViewById(R.id.progressBar);
+        progressBar.setVisibility(View.INVISIBLE);
         checkBox = (CheckBox)findViewById(R.id.checkbox);
-
         checkBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
@@ -86,13 +95,13 @@ public class LogInActivity extends AppCompatActivity {
           StringRequest objectRequest = new StringRequest(Request.Method.POST, Url_log, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
+                progressBar.setVisibility(View.VISIBLE);
                 try {
-
-                    Intent intent = new Intent(LogInActivity.this, ServiceProvider.class);
-                    startActivity(intent);
                 //    System.out.println("response" + response);
                 //    Toast.makeText(LogInActivity.this, response, Toast.LENGTH_SHORT).show();
                     JSONObject array = new JSONObject(response);
+                    Intent intent = new Intent(LogInActivity.this, ServiceProvider.class);
+                    startActivity(intent);
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
@@ -114,6 +123,11 @@ public class LogInActivity extends AppCompatActivity {
         };
         SingleTon.getInstance(getBaseContext()).addToRequestQueue(objectRequest);
     }
+              preferences = getSharedPreferences(prefName, MODE_PRIVATE);
+              editor = preferences.edit();
+              editor.putString("username", username.getText().toString());
+              editor.putString("password", password.getText().toString());
+              editor.commit();
     }
     });
      }
