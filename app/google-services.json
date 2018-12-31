@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1013565654213",
+    "firebase_url": "https://makeupartist-9bddb.firebaseio.com",
+    "project_id": "makeupartist-9bddb",
+    "storage_bucket": "makeupartist-9bddb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1013565654213:android:62fba9643b0f95aa",
+        "android_client_info": {
+          "package_name": "com.eslamshawky.hp.makeupartist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1013565654213-ev2ai1iivpkm8pkc7oqo23sgqctf0mp9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.eslamshawky.hp.makeupartist",
+            "certificate_hash": "ad58f0931274e176cba49361d8cea8f231bf8386"
+          }
+        },
+        {
+          "client_id": "1013565654213-97d3g3vttikill9b5j6pdldngf7o4ss3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHnRvypzmaDu9RYQAAHcCFk5FtlKpCe-o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1013565654213-97d3g3vttikill9b5j6pdldngf7o4ss3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

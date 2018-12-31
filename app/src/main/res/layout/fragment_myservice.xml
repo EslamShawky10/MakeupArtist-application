@@ -1,75 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView android:layout_height="match_parent"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".InterfaceServiceProvider.MyService">
+    xmlns:android="http://schemas.android.com/apk/res/android" >
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-<TextView
-    android:id="@+id/servces"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:padding="20dp"
-    android:layout_centerHorizontal="true"
-    android:textSize="24sp"
-    android:gravity="center"
-    android:textColor="@color/colorPrimaryDark"
-    android:background="@drawable/shapes"
-    android:text="خدماتى"/>
-        <TextView
-            android:id="@+id/name_service"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_below="@+id/servces"
-            android:paddingRight="30dp"
-            android:text="السعر"
-            android:textColor="@color/colorPrimaryDark"
-            android:textSize="20sp"
-            android:background="@drawable/shapesordermain"/>
+            android:layout_height="match_parent"
+            xmlns:android="http://schemas.android.com/apk/res/android">
 
-        <TextView
-            android:id="@+id/type_service"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_below="@+id/servces"
-            android:gravity="center_horizontal"
-            android:text="النوع"
-            android:textSize="20sp"
-            android:textColor="@color/colorPrimaryDark"
-            />
+                <TextView
+                    android:id="@+id/servces"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/shapes"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:padding="20dp"
+                    android:text="@string/myservices"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="24sp" />
 
-        <TextView
-            android:id="@+id/price_service"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:gravity="left"
-            android:layout_below="@+id/servces"
-            android:paddingLeft="30dp"
-            android:text="الإسم"
-            android:textColor="@color/colorPrimaryDark"
-            android:textSize="20sp"
-            />
+                <TextView
+                    android:id="@+id/name_service"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="left|center"
+                    android:background="@drawable/shapesordermain"
+                    android:paddingRight="10dp"
+                    android:layout_marginTop="85dp"
+                    android:text="@string/servicePrice"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="14sp" />
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/recycler_show_services"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/price_service"
-             />
-        <Button
-            android:id="@+id/add_service"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/recycler_show_services"
-            android:text="أضف"
-            android:background="@drawable/shapemainbutton"
-            android:layout_centerHorizontal="true"
-            android:textSize="24sp" />
+                <TextView
+                    android:id="@+id/type_service"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:layout_marginTop="85dp"
+                    android:text="@string/typeService"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="14sp" />
 
-    </RelativeLayout>
+                <TextView
+                    android:id="@+id/price_service"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="right|center"
+                    android:layout_marginTop="85dp"
+                    android:paddingLeft="10dp"
+                    android:text="@string/nameOfService"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="14sp" />
 
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_show_services"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="142dp" />
 
-</FrameLayout>
+                <Button
+                    android:id="@+id/add_service"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="460dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/shapemainbutton"
+                    android:text="@string/addService"
+                    android:textSize="24sp" />
+
+        </RelativeLayout>
+
+</ScrollView>

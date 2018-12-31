@@ -69,9 +69,12 @@ public class LoginCustomerServiceActivity extends AppCompatActivity {
                 @Override
                 public void onResponse(String response) {
                     try {
-                        JSONObject array = new JSONObject(response);
+                        JSONObject jsonObject = new JSONObject(response);
+                        int message_id = jsonObject.getInt("message_id");
                         Intent i = new Intent(LoginCustomerServiceActivity.this, YourServices.class);
                         startActivity(i);
+                        Toast.makeText(getApplicationContext(),"Login Successful!"+response,Toast.LENGTH_LONG).show();
+
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }

@@ -93,8 +93,8 @@ public class RegisterActivity extends AppCompatActivity implements GoogleApiClie
 
                     e.printStackTrace();
 
-                }
-                ;
+                };
+
             }
         });
         register.setOnClickListener(new View.OnClickListener() {

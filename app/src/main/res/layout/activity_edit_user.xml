@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InterfaceCustomerService.EditMyData">
+
+    <EditText
+        android:id="@+id/editText_changeFirstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/editFirstName" />
+
+    <EditText
+        android:id="@+id/editText_changeLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/editLastName" />
+
+    <EditText
+        android:id="@+id/editText_changeEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="210dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/editemail" />
+
+    <EditText
+    android:id="@+id/editText_change_password"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="280dp"
+    android:ems="10"
+    android:inputType="textPersonName"
+    android:hint="@string/editpassword" />
+
+    <TextView
+        android:id="@+id/textView_saveData"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="350dp"
+        android:ems="10"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Save" />
+</RelativeLayout>

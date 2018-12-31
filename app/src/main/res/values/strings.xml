@@ -1,7 +1,6 @@
 <resources>
     <string name="app_name">MakeupArtist</string>
-    <string name="Service">مقدم خدمة</string>
-    <string name="customer">طالب خدمة</string>
+
     <string name="title_activity_service_provider">ServiceProvider</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -10,7 +9,75 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
+    <string name="serviceprovider"> Service provider </string>
+    <string name="serviceowner">Service owner</string>
+    <string name="liveartist"> LIVE ARTIST </string>
+    <string name="serviceprovidersignin"> Service provider (sign in) </string>
+    <string name="usernameprovider"> User Name </string>
+    <string name="passwordprovider"> Password </string>
+    <string name="showpasswordprovider"> show password </string>
+    <string name="loginprovider"> log in</string>
+    <string name="Createanewaccountprovider"> Create a new account? </string>
+    <string name="userlogin">Service owner (sign in)</string>
+    <string name="phoneuser"> Phone Number </string>
+    <string name="passworduser"> Password </string>
+    <string name="showpassworduser"> show password </string>
+    <string name="loginuser"> log in </string>
+    <string name="createnewaccountuser"> Create new account ? </string>
+    <string name="Orderdetails"> Order details </string>
+    <string name="ServiceName">Service Name: </string>
+    <string name="OrderAddress"> Address: </string>
+    <string name="totalprice"> Totale Price: </string>
+    <string name="allServices"> Services </string>
+    <string name="editFirstName"> edit first name </string>
+    <string name="editLastName"> edit last name </string>
+    <string name="editemail"> edit email </string>
+    <string name="editpassword"> edit password </string>
+    <string name="registernewprovider"> Register a new member</string>
+    <string name="fullnameprovider"> full name </string>
+    <string name="userameprovider"> user name </string>
+    <string name="emailprovider"> email </string>
+    <string name="phoneProvider"> phone number </string>
+    <string name="addressprovider"> Place of service </string>
+    <string name="tradenameprovider"> trade name </string>
+    <string name="aboutprovider"> About the service provider </string>
+    <string name="loginfromregistprovider"> log in </string>
+    <string name="firstnameuser"> first name </string>
+    <string name="lastnameuser"> last name </string>
+    <string name="emailuser"> email </string>
+    <string name="loginFromRegisterUser"> Log in </string>
+    <string name="profileProvider"> Profile </string>
+    <string name="showProfileprovider"> view profile </string>
+    <string name="servicesProvider"> My Services </string>
+    <string name="notvicationProvider"> Notifications </string>
+    <string name="settingsProvider"> Settings </string>
+    <string name="ordersProviders"> My Orders </string>
+    <string name="logoutProvider"> Loug Out </string>
+    <string name="searching"> Searching </string>
+    <string name="searchPage"> Search page</string>
+    <string name="ordersUser"> Orders </string>
+    <string name="notificationsUser"> Notifications </string>
+    <string name="settingsUser"> Settings </string>
+    <string name="discountUser"> Discount Code </string>
+    <string name="logoutUser"> Loug Out </string>
+    <string name="nameOfService"> Service name </string>
+    <string name="servicePrice"> Service price </string>
+    <string name="dateOfService"> Service date </string>
+    <string name="more"> More </string>
+    <string name="ok"> ok </string>
+    <string name="myservices"> My Services </string>
+    <string name="typeService"> Service Type</string>
+    <string name="addService"> add </string>
+    <string name="myOrders"> My Orders </string>
+    <string name="editDataUser"> Edit My Data </string>
+    <string name="shareApplication"> Application Share </string>
+    <string name="changeLanguase">English</string>
+    <string name="linkedIn"> LinkedIn </string>
+    <string name="gmail"> eng.eslamshawky@gmail.com </string>
+    <string name="phone"> 01119091058 </string>
+    <string name="back"> Back </string>
+
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_your_services">YourServices</string>
     <string name="title_activity_settings_activityss">Settings</string>
@@ -72,19 +139,32 @@
         <item>2</item>
         <item>3</item>
     </string-array>
-
     <string-array name="multi_select_list_preference_default_value" />
-
     <string name="pref_title_system_sync_settings">System sync settings</string>
-
     <!-- Example settings for Notifications -->
     <string name="pref_header_notifications">Notifications</string>
-
     <string name="pref_title_new_message_notifications">New message notifications</string>
-
     <string name="pref_title_ringtone">Ringtone</string>
     <string name="pref_ringtone_silent">Silent</string>
-
     <string name="pref_title_vibrate">Vibrate</string>
+
+    <string name="skip"> skip </string>
+    <string name="search"> search </string>
+    <string name="servicePlace"> Select the service place </string>
+    <string name="google_place_api">AIzaSyCjx_W64XOIKYzycrVlZ8Wec2MqVAMvGpc</string>
+    <string name="servicetype"> Select the service type </string>
+    <string name="serviceName"> The service </string>
+    <string name="ServiceDate"> Select the service date</string>
+    <string name="serviceTime"> Select the service time </string>
+
+
+    <string name="editDataProvider"> edit my data</string>
+    <string name="editFullNameProvider"> editFullNameProvider </string>
+    <string name="editEmailProvider"> editEmailProvider </string>
+    <string name="editPasswordProvider"> editPasswordProvider </string>
+    <string name="editTradeNameProvider"> editTradeNameProvider </string>
+    <string name="editAddressProvider"> editAddressProvider </string>
+    <string name="editAboutProvider"> editAboutProvider </string>
+    <string name="saveData"> Save </string>
 
 </resources>

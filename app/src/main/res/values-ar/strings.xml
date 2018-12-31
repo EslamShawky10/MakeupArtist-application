@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ميك اب ارتست </string>
+    <string name="nav_header_title">أندرويد أستديو</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">رأس التنقل</string>
+    <string name="action_settings">الإعدادات</string>
+    <string name="serviceprovider">مقدم خدمة</string>
+    <string name="serviceowner"> طالب خدمة </string>
+    <string name="serviceprovidersignin"> مقدم الخدمة(تسجيل دخول) </string>
+    <string name="liveartist"> LIVE ARTIST </string>
+    <string name="usernameprovider"> إسم المستخدم </string>
+    <string name="passwordprovider"> كلمة المرور </string>
+    <string name="showpasswordprovider"> إظهار كلمة المرور </string>
+    <string name="loginprovider"> دخول </string>
+    <string name="Createanewaccountprovider"> إنشاء حساب جديد </string>
+    <string name="userlogin"> طالب خدمة (تسجيل دخول) </string>
+    <string name="phoneuser"> رقم التليفون </string>
+    <string name="passworduser"> الرقم السرى </string>
+    <string name="showpassworduser"> إظهار الرقم السرى </string>
+    <string name="loginuser"> دخول </string>
+    <string name="createnewaccountuser"> تسجيل حساب جديد ؟ </string>
+    <string name="registernewprovider"> تسجيل عضو جديد </string>
+    <string name="fullnameprovider"> الإسم رباعى </string>
+    <string name="userameprovider"> إسم المستخدم </string>
+    <string name="emailprovider"> البريد الإلكترونى </string>
+    <string name="phoneProvider">رقم التليفون </string>
+    <string name="addressprovider"> مكان الخدمة </string>
+    <string name="tradenameprovider"> الإسم التجارى </string>
+    <string name="aboutprovider"> نبذة عن مقدم الخدمة </string>
+    <string name="loginfromregistprovider"> دخول </string>
+    <string name="firstnameuser"> الإسم الأول </string>
+    <string name="lastnameuser"> الإسم الأخير </string>
+    <string name="emailuser"> البريد الإلكترونى </string>
+    <string name="loginFromRegisterUser"> دخول </string>
+    <string name="profileProvider"> الملف الشخصى </string>
+    <string name="showProfileprovider"> عرض الملف الشخصى </string>
+    <string name="servicesProvider"> خدماتى </string>
+    <string name="notvicationProvider"> التنبيهات </string>
+    <string name="settingsProvider"> إعدادات الحساب </string>
+    <string name="ordersProviders"> طلباتى </string>
+    <string name="logoutProvider"> خروج </string>
+    <string name="searching"> البحث </string>
+    <string name="searchPage"> صفحة البحث </string>
+    <string name="ordersUser"> الطلبات </string>
+    <string name="notificationsUser"> التنبيهات </string>
+    <string name="settingsUser"> إعدادات الحساب </string>
+    <string name="discountUser"> كود الخصم </string>
+    <string name="logoutUser"> خروج </string>
+    <string name="nameOfService"> إسم الخدمة </string>
+    <string name="servicePrice"> سعر الخدمة </string>
+    <string name="dateOfService"> تاريخ الخدمة </string>
+    <string name="more"> المزيد </string>
+    <string name="ok"> تم </string>
+    <string name="myservices"> خدماتى </string>
+    <string name="typeService"> نوع الخدمة </string>
+    <string name="addService"> أضف </string>
+    <string name="myOrders"> خدماتى </string>
+    <string name="editDataUser"> تعديل بياناتى </string>
+    <string name="changeLanguase">العربية</string>
+    <string name="shareApplication"> مشاركة التطبيق </string>
+    <string name="linkedIn"> لينكدإن </string>
+    <string name="gmail"> eng.eslamshawky@gmail.com </string>
+    <string name="phone"> 01119091058 </string>
+    <string name="back"> رجوع </string>
+
+    <string name="Orderdetails"> تفاصيل الطلب </string>
+    <string name="ServiceName"> إسم الخدمة: </string>
+    <string name="OrderAddress"> العنوان: </string>
+    <string name="totalprice"> إجمالى السعر: </string>
+    <string name="allServices"> الخدمات </string>
+    <string name="editFirstName"> تعديل الإسم الأول </string>
+    <string name="editLastName"> تعديل الإسم الأخير </string>
+    <string name="editemail"> تعديل البريد الإلكترونى </string>
+    <string name="editpassword"> تعديل الرقم السرى </string>
+    <string name="skip"> تخطى </string>
+    <string name="search"> بحث </string>
+    <string name="servicePlace"> إختر مكان الخدمة </string>
+    <string name="google_place_api">AIzaSyCjx_W64XOIKYzycrVlZ8Wec2MqVAMvGpc</string>
+    <string name="servicetype"> إختر نوع الخدمة </string>
+    <string name="serviceName"> الخدمة </string>
+    <string name="ServiceDate"> إختر تاريخ حجز الخدمة </string>
+    <string name="serviceTime"> إختر وقت حجز الخدمة </string>
+
+    <string name="editDataProvider"> تعديل بياناتى </string>
+    <string name="editFullNameProvider"> تعديل الاسم بالكامل </string>
+    <string name="editEmailProvider"> تعديل البريد الالكترونى </string>
+    <string name="editPasswordProvider"> تعديل كلمة المرور </string>
+    <string name="editTradeNameProvider"> تعديل الاسم التجارى </string>
+    <string name="editAddressProvider"> تعديل العنوان </string>
+    <string name="editAboutProvider"> تعديل حول مقدم الخدمة  </string>
+    <string name="saveData"> حفظ </string>
+
+
+
+
+
+
+
+
+
+
+
+
+    <string name="pref_title_system_sync_settings">إعدادات مزامنة النظام</string>
+    <string name="pref_title_sync_frequency">التزامن </string>
+    <string name="pref_title_social_recommendations">تمكين التوصيات الاجتماعية</string>
+    <string name="pref_description_social_recommendations">توصيات للناس للاتصال استنادًا إلى سجل رسائلك</string>
+    <string name="pref_title_display_name">عرض الإسم</string>
+    <string name="pref_default_display_name">John Smith</string>
+    <string name="pref_title_add_friends_to_messages">اضف اصدقاء للرسائل </string>
+    <string name="pref_header_general">عام</string>
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+    <string name="pref_header_notifications">التنبيهات </string>
+    <string name="pref_title_new_message_notifications">رسالة تنبيه جديدة</string>
+    <string name="pref_title_ringtone">رنين</string>
+    <string name="pref_ringtone_silent">صامت</string>
+    <string name="pref_title_vibrate">إهتزاز</string>
+
+    <string name="title_activity_service_provider">مزود الخدمة</string>
+    <string name="navigation_drawer_open">إفتح درج التنقل</string>
+    <string name="navigation_drawer_close">اغلق درج التنقل</string>
+    <string name="hello_blank_fragment">اهلا بكم </string>
+    <string name="title_activity_your_services">خدماتك</string>
+    <string name="title_activity_settings_activityss">الإعدادات</string>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</resources>

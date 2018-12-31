@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorAccent"
     android:orientation="vertical"
     tools:context=".InterfaceServiceProvider.AddNewServices">
 
@@ -13,7 +12,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/shapesordermain"
         android:ems="10"
-        android:hint="إسم الخدمة"
+        android:hint="@string/nameOfService"
         android:inputType="textPersonName" />
 
     <Spinner
@@ -28,7 +27,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/shapesordermain"
         android:ems="10"
-        android:hint="سعر الخدمة"
+        android:hint="@string/servicePrice"
         android:inputType="textPersonName" />
 
     <Button
@@ -37,7 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:background="@drawable/shapemainbutton"
-        android:text="تم"
+        android:text="@string/ok"
         android:textSize="25sp" />
 
 </LinearLayout>

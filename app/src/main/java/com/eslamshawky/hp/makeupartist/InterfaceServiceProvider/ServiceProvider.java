@@ -36,7 +36,7 @@ public class ServiceProvider extends AppCompatActivity
             }
         });
 
-        Profile profile = new Profile();
+       Profile profile = new Profile();
         android.support.v4.app.FragmentTransaction fragmentTransaction
                 = getSupportFragmentManager().beginTransaction();
         fragmentTransaction.replace(R.id.frame_collection,profile);

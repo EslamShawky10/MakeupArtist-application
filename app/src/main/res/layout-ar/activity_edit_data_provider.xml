@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    tools:context=".InterfaceServiceProvider.EditDataProvider">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/editImageProvider"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/user" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+        <EditText
+            android:id="@+id/editFullNameProvider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/editFullNameProvider" />
+
+        <EditText
+            android:id="@+id/editEmailProvider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/editEmailProvider" />
+
+        <EditText
+            android:id="@+id/editPasswordProvider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/editPasswordProvider" />
+
+        <EditText
+            android:id="@+id/editTradeNameProvider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/editTradeNameProvider" />
+
+        <EditText
+            android:id="@+id/editAddressProvider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/editAddressProvider" />
+
+        <EditText
+            android:id="@+id/editAboutProvider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/editAboutProvider" />
+        <Button
+            android:id="@+id/save_Data_Provider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/saveData"/>
+    </LinearLayout>
+</ScrollView>

@@ -20,8 +20,9 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="25dp"
             android:layout_toEndOf="@+id/imageView"
-            android:text="LIVE ARTIST"
+            android:text="@string/liveartist"
             android:textColor="@color/colorPrimaryDark"
+            android:textColorLink="@color/colorPrimaryDark"
             android:textSize="25dp"
             android:textStyle="normal" />
 
@@ -39,11 +40,11 @@
             android:id="@+id/textView2"
             android:layout_width="300dp"
             android:layout_height="55dp"
+            android:layout_centerHorizontal="true"
             android:layout_marginTop="125dp"
             android:background="@drawable/shapeslogintext"
-            android:layout_centerHorizontal="true"
             android:gravity="center"
-            android:text="مقدم الخدمة(تسجيل دخول)"
+            android:text="@string/serviceprovidersignin"
             android:textColorHint="@color/colorPrimary"
             android:textColorLink="@color/colorPrimary"
             android:textSize="20sp"
@@ -55,62 +56,65 @@
             android:layout_height="60dp"
             android:layout_alignParentStart="true"
             android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
             android:layout_marginTop="200dp"
+            android:layout_marginEnd="10dp"
             android:background="@drawable/shapeloginedittext"
             android:ems="10"
-            android:gravity="right|center"
-            android:hint="إسم المستخدم"
+            android:padding="10dp"
+            android:hint="@string/usernameprovider"
             android:inputType="textPersonName"
-            android:textColorHint="@color/colorPrimary" />
+            android:textColorHint="@color/colorPrimary"
+            android:textColorLink="@color/colorPrimaryDark" />
 
         <EditText
             android:id="@+id/edit_password"
             android:layout_width="match_parent"
             android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="275dp"
+            android:layout_marginEnd="10dp"
             android:background="@drawable/shapeloginedittext"
             android:ems="10"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginTop="275dp"
-            android:gravity="right|center"
-            android:hint="كلمة المرور"
+            android:hint="@string/passwordprovider"
             android:inputType="textPassword"
             android:padding="10dp"
-            android:textColorHint="@color/colorPrimary" />
+            android:textColorHint="@color/colorPrimary"
+            android:textColorLink="@color/colorPrimaryDark" />
 
         <CheckBox
             android:id="@+id/checkbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="337dp"
-            android:gravity="center"
-            android:layout_marginEnd="10dp"
-            android:layout_alignParentRight="true"
+            android:layout_marginStart="10dp"
             android:background="@drawable/shapecheckboxinlogin"
-            android:text="إظهار الرقم السرى" />
+            android:gravity="center"
+            android:text="@string/showpasswordprovider"
+            android:textColorLink="@color/colorPrimary" />
 
         <Button
             android:id="@+id/button_login"
             android:layout_width="100dp"
-            android:layout_height="40dp"
-            android:background="@drawable/shapemainbutton"
+            android:layout_height="50dp"
             android:layout_centerHorizontal="true"
-            android:text="دخول"
             android:layout_marginTop="400dp"
+            android:background="@drawable/shapemainbutton"
+            android:text="@string/loginprovider"
             android:textColorHint="@color/colorPrimary"
             android:textColorLink="@color/colorPrimary"
             android:textSize="18sp" />
 
         <TextView
             android:id="@+id/text_register"
-            android:layout_width="200dp"
-            android:layout_height="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
+            android:layout_marginTop="460dp"
             android:background="@drawable/shapemainbutton"
             android:gravity="center"
-            android:layout_marginTop="460dp"
-            android:text="إنشاء حساب جديد؟"
+            android:text="@string/Createanewaccountprovider"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textColorLink="@color/colorPrimaryDark"
             android:textSize="20dp" />
 
         <ProgressBar

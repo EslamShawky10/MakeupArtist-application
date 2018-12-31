@@ -3,12 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
-    <item android:title="البحث" >
+    <item android:title="@string/searching" >
         <menu>
             <item
                 android:id="@+id/nav_searching"
                 android:icon="@drawable/ic_menu_gallery"
-                android:title="صفحة البحث" />
+                android:title="@string/searchPage" />
 
         </menu>
     </item>
@@ -16,22 +16,22 @@
         <item
             android:id="@+id/nav_orders"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="طلباتى" />
+            android:title="@string/ordersUser" />
         <item
             android:id="@+id/nav_notification"
             android:icon="@drawable/notification"
-            android:title="الإشعارات" />
+            android:title="@string/notificationsUser" />
         <item
             android:id="@+id/nav_settings"
             android:icon="@drawable/ic_menu_manage"
-            android:title="إعدادات الحساب" />
+            android:title="@string/settingsUser" />
         <item
             android:id="@+id/nav_discount"
             android:icon="@drawable/ic_menu_send"
-            android:title="كود الخصم" />
+            android:title="@string/discountUser" />
 
         <item android:id="@+id/nav_singout"
             android:icon="@drawable/ic_menu_share"
-            android:title="تسجيل الخروج"/>
+            android:title="@string/logoutUser"/>
     </group>
 </menu>

@@ -15,24 +15,29 @@ import java.util.ArrayList;
 
 public class RecyclerAdapterAddNewService extends RecyclerView.Adapter<RecyclerAdapterAddNewService.RecyclerViewHolderAddnewService> {
     private Context context;
-    private ArrayList<MyServiceModel> myServiceModels ;
+    private ArrayList<MyServiceModel> myServiceModels;
 
     public RecyclerAdapterAddNewService(Context context, ArrayList<MyServiceModel> myServiceModels) {
         this.context = context;
         this.myServiceModels = myServiceModels;
     }
+
     public RecyclerAdapterAddNewService(Context context) {
         this.context = context;
     }
+
     public RecyclerAdapterAddNewService() {
+
     }
+
     public void setMyServiceModels(ArrayList<MyServiceModel> myServiceModels) {
         this.myServiceModels = myServiceModels;
     }
+
     @NonNull
     @Override
     public RecyclerViewHolderAddnewService onCreateViewHolder(@NonNull ViewGroup parent, int i) {
-        View view = LayoutInflater.from(context).inflate(R.layout.newservicename_price_type,parent,false);
+        View view = LayoutInflater.from(context).inflate(R.layout.newservicename_price_type, parent, false);
         return new RecyclerViewHolderAddnewService(view);
     }
 
@@ -51,14 +56,16 @@ public class RecyclerAdapterAddNewService extends RecyclerView.Adapter<RecyclerA
     public int getItemCount() {
         return myServiceModels.size();
     }
-public class RecyclerViewHolderAddnewService extends RecyclerView.ViewHolder{
-    TextView name,type,price;
-    public RecyclerViewHolderAddnewService(View view) {
-        super(view);
-        name = view.findViewById(R.id.text_name);
-        type = view.findViewById(R.id.text_type);
-        price=view.findViewById(R.id.text_price);
+
+    public class RecyclerViewHolderAddnewService extends RecyclerView.ViewHolder {
+        TextView name, type, price;
+
+        public RecyclerViewHolderAddnewService(View view) {
+            super(view);
+            name = view.findViewById(R.id.text_name);
+            type = view.findViewById(R.id.text_type);
+            price = view.findViewById(R.id.text_price);
+        }
     }
-}
 
 }

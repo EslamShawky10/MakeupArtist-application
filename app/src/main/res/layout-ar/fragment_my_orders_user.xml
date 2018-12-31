@@ -1,0 +1,33 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".InterfaceServiceProvider.Orders">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="30dp">
+
+        <TextView
+            android:id="@+id/MainOrders"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shapedetailsorders_data"
+            android:gravity="center"
+            android:text="@string/myOrders"
+            android:textSize="35dp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/RecyclerListOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/MainOrders"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp">
+
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+</ScrollView>

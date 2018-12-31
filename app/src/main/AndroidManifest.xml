@@ -35,7 +35,7 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyBGczLdsFc9UemLaXIiGbAKGPcrOQiPtO0" />
+            android:value="@string/google_place_api" />
 
         <activity
             android:name=".InterfaceServiceProvider.ServiceProvider"
@@ -47,7 +47,16 @@
             android:name=".InterfaceCustomerService.YourServices"
             android:label="@string/title_activity_your_services"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".InterfaceServiceProvider.DetailsOrders"></activity>
+        <activity android:name=".InterfaceServiceProvider.DetailsOrders" />
+        <activity android:name=".InterfaceCustomerService.EditMyData" />
+        <activity android:name=".InterfaceServiceProvider.EditDataProvider" />
+        <activity android:name=".InterfaceCustomerService.ResultSearchUser" />
+        <activity android:name=".InterfaceCustomerService.ProfileProvider" />
+        <activity android:name=".InterfaceCustomerService.ServiceRequest" />
+        <activity android:name=".InterfaceCustomerService.ProfielProvider" />
+        <activity android:name=".RegisterFirebase.Register">
+        </activity>
+        <activity android:name=".Register.RegisterActivity"></activity>
     </application>
 
 </manifest>

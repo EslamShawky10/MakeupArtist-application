@@ -38,6 +38,12 @@ public class MyService extends Fragment {
     }
 
     @Override
+    public void onStart() {
+        super.onStart();
+        myServiceModels.clear();
+    }
+
+    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         final View view =  inflater.inflate(R.layout.fragment_myservice, container, false);
@@ -61,9 +67,11 @@ public class MyService extends Fragment {
        dialog.show();
        dialog.getWindow().setLayout(1000,1000);
     }
+
     private void addNewServiceByProvider(){
         recyclerAdapterAddNewService = new RecyclerAdapterAddNewService(getActivity());
-        StringRequest stringRequest = new StringRequest(Request.Method.GET, URLServiceByProvider, new Response.Listener<String>() {
+        StringRequest stringRequest = new StringRequest(Request.Method.GET, URLServiceByProvider,
+                new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
                 try {
@@ -83,7 +91,6 @@ public class MyService extends Fragment {
                         recyclerAdapterAddNewService.setMyServiceModels(myServiceModels);
                         mRecyclerView.setAdapter(recyclerAdapterAddNewService);
                         recyclerAdapterAddNewService.notifyDataSetChanged();
-
                     }
                 } catch (JSONException e) {
                     e.printStackTrace();
